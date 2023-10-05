@@ -17,17 +17,17 @@ void setup() {
   //
 
   //Population of variables
-  backgroundX = appWidth*0; 
-  backgroundY = appHeight*0; 
-  backgroundWidth = appWidth-1; 
+  backgroundX = appWidth*0;
+  backgroundY = appHeight*0;
+  backgroundWidth = appWidth-1;
   backgroundHeight = appHeight-1;
-  gardenX = appWidth/16; 
-  gardenY = appHeight/16; 
-  gardenWidth = appWidth/4; 
+  gardenX = appWidth/16;
+  gardenY = appHeight/16;
+  gardenWidth = appWidth/4;
   gardenHeight = appHeight/4;
-  monaX = appWidth*3/4; 
-  monaY = appHeight*6/10; 
-  monaWidth = appWidth/8; 
+  monaX = appWidth*3/4;
+  monaY = appHeight*6/10;
+  monaWidth = appWidth/8;
   monaHeight = appHeight/3;
   backgroundPic = loadImage("../imagesUsed/Landscape/pebble-beach.jpg");
   gardenPic = loadImage("../imagesUsed/Landscape/Garden.jpg");
@@ -44,7 +44,7 @@ void setup() {
 //
 
 void draw() {
-  image( backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight); 
+  image( backgroundPic, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   image( gardenPic, gardenX, gardenY, gardenWidth, gardenHeight);
   image( monaPic, monaX, monaY, monaWidth, monaHeight);
 } //End draw
@@ -52,19 +52,20 @@ void draw() {
 //
 
 void mousePressed() {
-  
 }//End mousePressed
 
 //
 
 void keyPressed() {
-  if (key == 'N');{
-  nightMode = true;
-  tint(100);
+  if (key == 'N');
+  {
+    nightMode = true;
+    tint(100);
   };
-   if (key == 'D');{
-  nightMode = false;
-  tint(255);
+  if (key == 'D');
+  {
+    nightMode = false;
+    tint(255);
   };
 }//End keyPressed
 
