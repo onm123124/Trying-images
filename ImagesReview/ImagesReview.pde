@@ -48,15 +48,30 @@ void setup() {
   //
   //Aspect Ratio Calculations
   float aspectRatio = 0.0;
-  int picWidth, picHeight;
+  int picWidth, picHeight, rectWidth, rectHeight;
+  rectWidth = ;
+  rectHeight = ;
   picWidth = ;
   picHeight = ;
   if ( picWidth >= picHeight ) { //Landscape or square
     aspectRatio = picHeight / picWidth; //CAUTION: int to float, casting
+    picWidth = rectWidth; //1:1
+    picHeight = aspectRatio * picHeight; //Aspect ratio, rewrite smaller dimension 
+    if ( picHeight > rectHeight ){
+     println("Problem")
+    }
+    return picHeight;
   } else {//portrait
     aspectRatio = picWidth / picHeight; //CAUTION: int to float, casting
+    picHeight = rectHeight; //1:1
+    picWidth = aspectRatio * picHeight; //Aspect ratio, rewrite smaller dimension 
+    if ( picWidth > rectWidth ){
+     println("Problem")
+    }
+    return picWidth;
   }
-  if () {
+  if ( ) {
+    
   } else {
   }
 } //End setup
